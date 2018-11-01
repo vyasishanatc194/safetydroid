@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/colorHeader">
+
+    <ImageButton
+        android:id="@+id/imbgBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back" />
+
+    <com.mysafetynet.customs.MySafetyText
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imbgBack"
+        android:layout_toStartOf="@+id/imbgDone"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        android:text="Title"
+        android:textColor="@color/colorForgot"
+        app:fontName="@string/fontRalewayBold" />
+
+    <ImageButton
+        android:id="@+id/imbgDone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_add" />
+</RelativeLayout>

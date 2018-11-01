@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:gravity="center"
+    tools:context=".activities.LoginTypeActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mysafetynet.customs.MySafetyText
+            android:gravity="center"
+            android:layout_margin="20dp"
+            app:fontName="Raleway.ttf"
+            android:background="@drawable/round_shap"
+            android:id="@+id/btParentLogin"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/parent" />
+
+        <com.mysafetynet.customs.MySafetyText
+            android:gravity="center"
+            android:layout_margin="20dp"
+            app:fontName="Raleway.ttf"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_shap"
+            android:id="@+id/btChildLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/child" />
+    </LinearLayout>
+
+
+</LinearLayout>

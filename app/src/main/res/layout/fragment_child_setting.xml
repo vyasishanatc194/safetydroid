@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/inner_screen_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".fragments.ParentSettingScreen">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imvProfile"
+
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardMaxElevation="2dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+
+                    <com.mysafetynet.customs.MySafetyText
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="Sophia Willian John"
+                        android:textColor="@color/colorHint"
+                        android:textSize="16sp"
+                        app:fontName="@string/fontRalewayBold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Username:"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnEdit"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_edit" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeEditProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtEditProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow1"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Edit Profile"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativeChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtChangePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow2"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Change Password"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativePricing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtPricing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow3"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Pricing"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativePartners"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtPartners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow4"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Partners"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativeHelpAndFeeback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtHelpAndFeedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow5"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Help And Feedback"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativeAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtAboutUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow6"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="About Us"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativeContactUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtContactUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow7"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Contact Us"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativeFaqs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtFaqs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow8"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="FAQs"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                    <RelativeLayout
+                        android:id="@+id/relativePrivacyPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="50dp"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtPrivacyPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnArrow9"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnArrow9"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@color/colorLine" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <com.mysafetynet.customs.MySafetyButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/cardview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/button"
+                android:elevation="5dp"
+                android:text="@string/btnLogout"
+                android:textColor="@android:color/white"
+                app:fontButtonName="@string/fontRalewayBold" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

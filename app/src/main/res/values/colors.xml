@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="childLogin">#3E44F2</color>
+    <color name="colorLine">#d3d3d3</color>`
+    <color name="colorHint">#222222</color>
+    <color name="colorBg">#4025D8</color>
+    <color name="colorForgot">#772FE0</color>
+    <color name="colorLogin">#EEEEEE</color>
+    <color name="colorSign">#5256E4</color>
+    <color name="colorHeader">#dfe2f1</color>
+    <color name="colorRequestBg">#EAECF7</color>
+    <color name="colorReject">#F82179</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="colorText">#484cf4</color>
+    <color name="colorTab">#222222</color>
+    <color name="colorTabActive">#484cf4</color>
+    <color name="colorTextInput">#222222</color>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/inner_screen_bg"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.ParentTabActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/content_action_layout" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp"
+        app:tabBackground="@android:color/white"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/colorForgot"
+        app:tabTextColor="@color/colorHint">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/tab_request"
+            android:text="@string/tabRequest" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/tab_badge"
+            android:text="@string/tabBadge" />
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/tab_setting"
+            android:text="@string/tabSetting" />
+
+    </android.support.design.widget.TabLayout>
+
+
+</RelativeLayout>

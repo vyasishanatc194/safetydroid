@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">MySafetyNet</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_parent_tab">ParentTabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_child_tab">ChildTabActivity</string>
+
+    <string name="font_simple">Raleway.ttf</string>
+    <string name="font_bold">Raleway Bold.ttf</string>
+    <string name="font_light">Raleway Light.ttf</string>
+    <string name="parent">PARENT</string>
+    <string name="child">CHILD</string>
+    <string name="errUsername">Please enter username</string>
+    <string name="errPaszsword">Please enter password</string>
+    <string name="errNetwork">Check your internet connection and try again</string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="errPhoneNumber">Enter your phone number</string>
+    <string name="fcm_message">You have new notification</string>
+    <string name="errOtp">Please enter OTP</string>
+    <string name="errConfPassword">Please enter Confirm password</string>
+    <string name="errNotMatch">Password not match</string>
+    <string name="errAtleatsPassword">Enter atleast 6 digit password</string>
+
+
+    <string name="fontRalewayLight">Raleway Light.ttf</string>
+    <string name="fontRalewayBold">Raleway Bold.ttf</string>
+    <string name="btnNext">Next</string>
+    <string name="errFname">Enter First Name</string>
+    <string name="errLname">Enter Last Name</string>
+    <string name="errBdate">Select Birthdate</string>
+    <string name="errAge">Select Age</string>
+    <string name="errValidAge">App is only for below 18 Year</string>
+    <string name="errSchoolName">Enter School Name</string>
+    <string name="errSchoolDistrict">Enter School District Number</string>
+    <string name="errStateName">Enter State Name</string>
+    <string name="errUserName">Enter Username</string>
+    <string name="errPassword">Enter Password</string>
+    <string name="errCPassword">Enter Confirm Password</string>
+    <string name="errMatchPassword">Password does not match</string>
+    <string name="btnUpdate">Update</string>
+    <string name="todo">TODO</string>
+    <string name="btnUnsubscribe">UnSubscribe</string>
+    <string name="dialog_unsub_title">Unsubscribe</string>
+    <string name="dialog_unsub_message">Are you sure want to unsub</string>
+    <string name="pos_unsub">Yes</string>
+    <string name="neg_unsub">Cancel</string>
+    <string name="tabChildren">Children</string>
+    <string name="tabOrders">Orders</string>
+    <string name="tabSubscription">Subscriptions</string>
+    <string name="tabSetting">Setting</string>
+    <string name="add_child">ADD CHILD</string>
+    <string name="edit_child">EDIT CHILD</string>
+    <string name="tabRequest">Request</string>
+    <string name="tabBadge">Badge</string>
+    <string name="send_request">SEND REQUEST</string>
+    <string name="errRequest">Enter Badge ID</string>
+
+    <string name="btnLogout">Log out</string>
+    <string name="show_page_pricing">pricing</string>
+    <string name="show_page_partners">partners</string>
+    <string name="show_page_help_and_feedback">help-and-feedback</string>
+    <string name="show_page_about_us">about-us</string>
+    <string name="show_page_contact_us">contact-us</string>
+    <string name="show_page_faqs">faqs</string>
+    <string name="show_page_privacy_policy">privacy-policy</string>
+    <string name="errEmail">Enter your Email</string>
+
+</resources>
