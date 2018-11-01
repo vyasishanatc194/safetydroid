@@ -45,7 +45,7 @@ public class ChildForgotPasswordActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         initDialog();
-        mApiService = APIClient.getClient().create(ApiService.class);
+        mApiService = APIClient.getService();
         mAppPref = new AppPref(this);
     }
 

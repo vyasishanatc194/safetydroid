@@ -50,8 +50,8 @@ public class ChildTabActivity extends AppCompatActivity {
 
     private void hideItems() {
         imbgDone.setVisibility(View.INVISIBLE);
-        imbgBack.setVisibility(View.INVISIBLE);
-        txtTitle.setText("REQUEST");
+        imbgBack.setVisibility(View.GONE);
+
     }
 
     private void initTabs() {
@@ -63,24 +63,25 @@ public class ChildTabActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()) {
                     case 0:
-                        imbgDone.setVisibility(View.INVISIBLE);
-                        imbgBack.setVisibility(View.INVISIBLE);
+                        imbgDone.setVisibility(View.VISIBLE);
                         mViewPager.setCurrentItem(tab.getPosition());
-                        txtTitle.setText("REQUEST");
+                        txtTitle.setText("HOME");
                         break;
                     case 1:
                         imbgDone.setVisibility(View.INVISIBLE);
-                        imbgBack.setVisibility(View.INVISIBLE);
                         mViewPager.setCurrentItem(tab.getPosition());
-                        txtTitle.setText("BADGE");
+                        txtTitle.setText("ORDERS");
                         break;
                     case 2:
                         imbgDone.setVisibility(View.INVISIBLE);
-                        imbgBack.setVisibility(View.INVISIBLE);
+                        mViewPager.setCurrentItem(tab.getPosition());
+                        txtTitle.setText("SUBSCRIPTIONS");
+                        break;
+                    case 3:
+                        imbgDone.setVisibility(View.INVISIBLE);
                         mViewPager.setCurrentItem(tab.getPosition());
                         txtTitle.setText("SETTING");
                         break;
-
                 }
             }
 
@@ -125,6 +126,7 @@ public class ChildTabActivity extends AppCompatActivity {
                 break;
         }
     }
+
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -133,6 +135,8 @@ public class ChildTabActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            // getItem is called to instantiate the fragment for the given page.
+            // Return a PlaceholderFragment (defined as a static inner class below).
             if (position == 0) {
                 return ChildRequestFragment.newInstance();
             } else if (position == 1) {
@@ -146,6 +150,7 @@ public class ChildTabActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
+            // Show 3 total pages.
             return 3;
         }
     }

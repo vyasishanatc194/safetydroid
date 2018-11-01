@@ -11,25 +11,6 @@
     <string name="tab_text_3">Tab 3</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_child_tab">ChildTabActivity</string>
-
-    <string name="font_simple">Raleway.ttf</string>
-    <string name="font_bold">Raleway Bold.ttf</string>
-    <string name="font_light">Raleway Light.ttf</string>
-    <string name="parent">PARENT</string>
-    <string name="child">CHILD</string>
-    <string name="errUsername">Please enter username</string>
-    <string name="errPaszsword">Please enter password</string>
-    <string name="errNetwork">Check your internet connection and try again</string>
-    <string name="submit">SUBMIT</string>
-    <string name="login">LOGIN</string>
-    <string name="errPhoneNumber">Enter your phone number</string>
-    <string name="fcm_message">You have new notification</string>
-    <string name="errOtp">Please enter OTP</string>
-    <string name="errConfPassword">Please enter Confirm password</string>
-    <string name="errNotMatch">Password not match</string>
-    <string name="errAtleatsPassword">Enter atleast 6 digit password</string>
-
-
     <string name="fontRalewayLight">Raleway Light.ttf</string>
     <string name="fontRalewayBold">Raleway Bold.ttf</string>
     <string name="btnNext">Next</string>
@@ -60,9 +41,23 @@
     <string name="edit_child">EDIT CHILD</string>
     <string name="tabRequest">Request</string>
     <string name="tabBadge">Badge</string>
-    <string name="send_request">SEND REQUEST</string>
-    <string name="errRequest">Enter Badge ID</string>
 
+    <string name="font_simple">Raleway.ttf</string>
+    <string name="font_bold">Raleway Bold.ttf</string>
+    <string name="font_light">Raleway Light.ttf</string>
+    <string name="parent">PARENT</string>
+    <string name="child">CHILD</string>
+    <string name="errUsername">Please enter username</string>
+    <string name="errPaszsword">Please enter password</string>
+    <string name="errNetwork">Check your internet connection and try again</string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="errPhoneNumber">Enter your phone number</string>
+    <string name="fcm_message">You have new notification</string>
+    <string name="errOtp">Please enter OTP</string>
+    <string name="errConfPassword">Please enter Confirm password</string>
+    <string name="errNotMatch">Password not match</string>
+    <string name="errAtleatsPassword">Enter atleast 6 digit password</string>
     <string name="btnLogout">Log out</string>
     <string name="show_page_pricing">pricing</string>
     <string name="show_page_partners">partners</string>
@@ -71,6 +66,22 @@
     <string name="show_page_contact_us">contact-us</string>
     <string name="show_page_faqs">faqs</string>
     <string name="show_page_privacy_policy">privacy-policy</string>
-    <string name="errEmail">Enter your Email</string>
+    <string name="btnAddChild">Add Child</string>
+    <string name="btnUpgrade">UPGRADE</string>
+    <string name="btnDone">Done</string>
+    <string name="btnPayNow">Pay Now</string>
+    <string name="card_name">Card Holder Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_month">Card Month</string>
+    <string name="card_year">Card Year</string>
+    <string name="description">Decription</string>
+    <string name="card_cvv">CVV Number</string>
+    <string name="btnPay">Pay</string>
+    <string name="errCardName">Enter Card Name</string>
+    <string name="errCardNumber">Enter Card Number</string>
+    <string name="errCardCvv">Enter CVV</string>
+    <string name="errCardValidCvv">Enter Valid CVV</string>
+    <string name="errCardValidNumber">Enter Valid Card Number</string>
+    <string name="errCardValidCvvOriginal">Invalid CVV</string>
 
 </resources>

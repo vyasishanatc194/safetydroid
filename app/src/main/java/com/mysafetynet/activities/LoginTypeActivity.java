@@ -30,12 +30,10 @@ public class LoginTypeActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btParentLogin:
-                Intent Parent=new Intent(LoginTypeActivity.this,ParentLoginActivity.class);
-                startActivity(Parent);
                 break;
             case R.id.btChildLogin:
-                Intent Child=new Intent(LoginTypeActivity.this,ChildLoginActivity.class);
-                startActivity(Child);
+                Intent intent=new Intent(LoginTypeActivity.this,ChildLoginActivity.class);
+                startActivity(intent);
                 break;
         }
     }

@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorHint</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -20,13 +21,14 @@
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
+
     <style name="TextStyle">
         <item name="android:padding">10dp</item>
         <item name="android:color">@color/colorForgot</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:backgroundTint">@color/colorLine</item>
     </style>
-
     <style name="HeadingTextStyle">
         <item name="android:padding">10dp</item>
         <item name="android:color">@color/colorForgot</item>

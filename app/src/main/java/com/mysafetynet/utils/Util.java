@@ -16,6 +16,7 @@ import java.util.Locale;
 public class Util {
     public static final String FORMAT_YYYYMMDD = "yyyy/MM/dd";
     public static final String FORMAT_DDMMYYYY = "dd/MM/yyyy";
+    public static final String FORMAT_DDMMYYYYHHMMSS = "dd/MM/yyyy HH:mm:ss a";
 
     public static String getCurrentDate() {
         Calendar cal = Calendar.getInstance();
@@ -81,4 +82,19 @@ public class Util {
     public static void showToast(Context context, String message) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
+
+    public static boolean isValidCardMonth(String month) {
+        int monthNum = Integer.parseInt(month);
+        return monthNum >= 1 && monthNum <= 12;
+    }
+
+    public static boolean isValidCardYear(String month) {
+        return month.length() >= 2;
+    }
+
+    public static boolean isValidCardCvv(String cvv) {
+
+        return cvv.length() == 3;
+    }
+
 }

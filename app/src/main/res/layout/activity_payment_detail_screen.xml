@@ -1,8 +1,377 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.PaymentDetailScreen">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/inner_screen_bg"
+    tools:context=".activities.AddChildActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/content_action_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imvProfile"
+                android:layout_marginTop="-58dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardMaxElevation="2dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtChildName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Username:"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnEdit"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+
+                            android:layout_marginStart="5dp"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_edit" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtChildyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="10 Year"
+                            android:layout_marginEnd="5dp"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="13dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/colorHint"
+                            android:clickable="false"
+                            android:focusable="false" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtChildGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:layout_marginStart="5dp"
+                            android:focusable="false"
+                            android:text="Male"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorLine" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <com.mysafetynet.customs.MySafetyText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Parent Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="14sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtParentName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Parent Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <com.mysafetynet.customs.MySafetyText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Child Birthdate"
+                            android:textColor="@color/colorHint"
+                            android:textSize="14sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtChildBithdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Parent Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <com.mysafetynet.customs.MySafetyText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="School Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="14sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtSchoolname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Parent Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <com.mysafetynet.customs.MySafetyText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="School Distrct Number"
+                            android:textColor="@color/colorHint"
+                            android:textSize="14sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtSchoolDistrictNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Parent Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <com.mysafetynet.customs.MySafetyText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="State"
+                            android:textColor="@color/colorHint"
+                            android:textSize="14sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtStatename"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/imgbtnEdit"
+                            android:text="Parent Name"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorLine" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="40dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="12"
+                            android:textColor="@color/colorBg"
+                            android:textSize="40sp"
+                            app:fontName="@string/fontRalewayBold" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtDollar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/txtAmount"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="$"
+                            android:textColor="@color/colorBg"
+                            android:textSize="20sp"
+                            app:fontName="@string/fontRalewayLight" />
+
+                        <com.mysafetynet.customs.MySafetyText
+                            android:id="@+id/txtType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/txtDollar"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="Per Month"
+                            android:textColor="@color/colorHint"
+                            android:textSize="16sp"
+                            app:fontName="@string/fontRalewayLight" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:elevation="1dp"
+                android:src="@drawable/girl" />
+
+            <com.mysafetynet.customs.MySafetyButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/cardview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/button"
+                android:elevation="5dp"
+                android:text="@string/btnPayNow"
+                android:textColor="@android:color/white"
+                app:fontButtonName="@string/fontRalewayBold" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

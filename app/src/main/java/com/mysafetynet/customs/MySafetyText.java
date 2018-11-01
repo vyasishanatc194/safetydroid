@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.support.v7.widget.AppCompatTextView;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 
 import com.mysafetynet.R;
-
 
 public class MySafetyText extends AppCompatTextView {
     private Typeface mTypeface;
@@ -31,6 +31,9 @@ public class MySafetyText extends AppCompatTextView {
         if (attrs != null) {
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MySafetyText);
             String fontName = a.getString(R.styleable.MySafetyText_fontName);
+            if (fontName == null && TextUtils.isEmpty(fontName)) {
+                fontName = "Raleway Light.ttf";
+            }
             mTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/" + fontName);
             setTypeface(mTypeface);
             a.recycle();

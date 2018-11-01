@@ -3,6 +3,7 @@
     <declare-styleable name="MySafetyText">
         <attr name="fontName" />
     </declare-styleable>
+
     <declare-styleable name="MySafetyButton">
         <attr name="fontButtonName" />
     </declare-styleable>

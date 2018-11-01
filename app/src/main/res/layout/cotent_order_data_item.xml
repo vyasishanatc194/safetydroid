@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorHeader"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layoutImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/girl" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/layoutArrow"
+        android:layout_toEndOf="@+id/layoutImage"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <com.mysafetynet.customs.MySafetyText
+            android:id="@+id/txtChildName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Child Name"
+            android:textSize="14sp"
+            app:fontName="@string/fontRalewayBold" />
+
+        <com.mysafetynet.customs.MySafetyText
+            android:id="@+id/txtChildCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Child Name"
+            android:textColor="@color/colorHint"
+            android:textSize="14sp"
+            app:fontName="@string/fontRalewayLight" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtChildyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="10 year"
+                android:textColor="@color/colorHint"
+                android:textSize="14sp"
+                app:fontName="@string/fontRalewayLight" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/colorHint"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtChildGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="Male"
+                android:textColor="@color/colorHint"
+                android:textSize="14sp"
+                app:fontName="@string/fontRalewayLight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right_side"
+            android:tint="@color/colorForgot" />
+
+    </LinearLayout>
+</RelativeLayout>

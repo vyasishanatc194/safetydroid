@@ -179,7 +179,6 @@ public interface ApiService {
             @Part MultipartBody.Part image
     );
 
-
     @POST(ApiConstants.PARENT_UNSUBSCRIBE_URL)
     Call<JsonElement> doUnsubscribe(
             @Header(ApiConstants.TAGS.Authorization) String bearertoken,
@@ -187,11 +186,4 @@ public interface ApiService {
             @Query(ApiConstants.TAGS.stripe_id) String stripe_id
     );
 
-    @POST(ApiConstants.CHILD_CHANGE_PASSWORD_URL)
-    Call<JsonElement> doChildChangePassword(
-            @Header(ApiConstants.TAGS.Authorization) String bearertoken,
-            @Query(ApiConstants.TAGS.password) String password,
-            @Query(ApiConstants.TAGS.confirm_password) String confirm_password,
-            @Query(ApiConstants.TAGS.username) String username
-    );
 }

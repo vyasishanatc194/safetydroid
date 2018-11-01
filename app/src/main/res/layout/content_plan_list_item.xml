@@ -1,20 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
     android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/item_number"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtPlanTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="FREE TRIAL"
+                android:textColor="@color/colorForgot"
+                android:textSize="14sp"
+                app:fontName="@string/fontRalewayBold" />
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtPlanDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="FREE TRIAL"
+                android:textColor="@color/colorHint"
+                android:textSize="14sp"
+                app:fontName="@string/fontRalewayLight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtUpgrade"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_price"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btnUpgrade"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:fontName="@string/fontRalewayBold" />
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="$ 80"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBg"
+                android:textSize="18sp"
+                app:fontName="@string/fontRalewayBold" />
+
+            <com.mysafetynet.customs.MySafetyText
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Monthly"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBg"
+                android:textSize="14sp"
+                app:fontName="@string/fontRalewayLight" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

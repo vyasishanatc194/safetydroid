@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 
 import com.google.gson.Gson;
@@ -53,7 +52,7 @@ public class ChildLoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         initDialog();
 
-        mApiService = APIClient.getClient().create(ApiService.class);
+        mApiService = APIClient.getService();
         mAppPref = new AppPref(this);
     }
 
@@ -108,6 +107,7 @@ public class ChildLoginActivity extends AppCompatActivity {
                 mProgressDialog.dismiss();
                 if (response.isSuccessful()) {
                     JsonElement body = response.body();
+
                     int status = body.getAsJsonObject().get(ApiConstants.TAGS.status).getAsInt();
                     String message = body.getAsJsonObject().get(ApiConstants.TAGS.message).getAsString();
                     switch (status) {
@@ -116,7 +116,7 @@ public class ChildLoginActivity extends AppCompatActivity {
                             mAppPref.setId(loginResponse.getResult().getId());
                             mAppPref.setEmail(loginResponse.getResult().getEmail());
                             mAppPref.setImage(loginResponse.getResult().getImage());
-                            mAppPref.setAuthToken("Bearer "+loginResponse.getResult().getToken());
+                            mAppPref.setAuthToken(loginResponse.getResult().getToken());
                             mAppPref.setName(loginResponse.getResult().getFirst_name() + " " + loginResponse.getResult().getLast_name());
                             mAppPref.setLogged(true);
                             mAppPref.setUserType(ApiConstants.USER_CHILD);
@@ -128,9 +128,6 @@ public class ChildLoginActivity extends AppCompatActivity {
                             Util.showToast(ChildLoginActivity.this,message );
                             break;
                     }
-                }else {
-                    mProgressDialog.dismiss();
-                    Util.showToast(ChildLoginActivity.this, "Something went wrong");
                 }
             }
 

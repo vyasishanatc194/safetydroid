@@ -288,6 +288,7 @@ public class AddChildActivity extends AppCompatActivity {
         bundle.putString(ApiConstants.TAGS.username, userName);
         bundle.putString(ApiConstants.TAGS.password, password);
         bundle.putString(ApiConstants.TAGS.confirm_password, confirmPassword);
+        bundle.putString(ApiConstants.TAGS.image, imagePath);
         Intent intent = new Intent(AddChildActivity.this, PlanListActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
